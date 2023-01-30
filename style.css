@@ -1,73 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
 * {
-  font-family: "Unbounded", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background: rgba(0, 0, 0, 0.5) url("/img/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
+  background-color: #645cbb;
+  font-family: "Unbounded", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
 .container {
-  width: 350px;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container>h1{
+  margin-bottom: 0.5rem;
+}
+main {
   display: flex;
   flex-direction: column;
-  padding: 0 15px 0 15px;
 }
-
-.input-field .input {
-  height: 45px;
-  width: 87%;
+.user {
+  width: 20rem;
+  height: 3rem;
   border: none;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 14px;
-  padding: 0 0 0 45px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid white;
-  outline: none;
-  transition: 0.5s;
-}
-
-.input-field .input:hover {
-  background: rgba(0, 0, 0, 1);
-}
-
-.input-user .input-place {
+  background-color: #f2f2f2;
   margin: 0.5rem 0;
-}
-
-.button-container {
-  margin-top: 1rem;
-}
-
-::-webkit-input-placeholder {
-  color: #fff;
-}
-
-.submit {
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
-  height: 45px;
+  padding: 0.8em;
   outline: none;
-  width: 100%;
-  color: black;
-  background: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  transition: 0.3s;
-  transition: 0.5s;
 }
-
-.submit:hover {
-  background: rgba(255, 255, 255, 1);
+.pass {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  background-color: #f2f2f2;
+  margin: 0.5rem 0;
+  padding: 0.8em;
+  outline: none;
+}
+.user::placeholder {
+  color: black;
+}
+.pass::placeholder {
+  color: black;
+}
+.button-container {
+  background-color: #645CBB;
+  cursor: pointer;
+}
+.button-container input {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  background-color: #645CBB;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }

@@ -5,27 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tugas p.web dan perangkat bergerak</title>
+    <title>Tugas p.web</title>
   </head>
   <body>
-    <div class="box">
-      <div class="container">
-        <div class="input-user">
-          <div class="input-field">
-            <input type="text" class="input input-place" placeholder="Username" id="username" />
-          </div>
-
-          <div class="input-field">
-            <input type="password" class="input input-place" placeholder="Password" id="password" />
-          </div>
-        </div>
-        <div class="button-container">
-          <div class="input-field">
-            <input id="myBtn" type="submit" class="submit" value="Login" onclick="loginsystem()" />
-          </div>
-        </div>
+    <div class="container">
+      <h1>Login</h1>
+      <main>
+        <input class="user" type="text" placeholder="Username" id="username" />
+        <input class="pass" type="password" placeholder="Password" id="password" />
+      </main>
+      <div class="button-container">
+        <input type="button" value="Login" onclick="login()" />
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
