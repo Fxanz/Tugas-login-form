@@ -21,8 +21,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.container>h1{
+.container > h1 {
   margin-bottom: 0.5rem;
+  color: #645cbb;
 }
 main {
   display: flex;
@@ -32,37 +33,43 @@ main {
   width: 20rem;
   height: 3rem;
   border: none;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   margin: 0.5rem 0;
   padding: 0.8em;
   outline: none;
+  font-weight: 600;
+  border: 1px solid black;
 }
 .pass {
   width: 20rem;
   height: 3rem;
   border: none;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   margin: 0.5rem 0;
   padding: 0.8em;
   outline: none;
+  font-weight: 600;
+  border: 1px solid black;
 }
 .user::placeholder {
-  color: black;
+  color: gray;
+  font-weight: 400;
 }
 .pass::placeholder {
-  color: black;
+  font-weight: 100;
+  color: gray;
 }
 .button-container {
-  background-color: #645CBB;
+  background-color: #645cbb;
   cursor: pointer;
 }
 .button-container input {
   border: none;
   width: 20rem;
   height: 3rem;
-  background-color: #645CBB;
+  background-color: #645cbb;
   color: white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
 }
