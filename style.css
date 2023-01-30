@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #645cbb;
   font-family: "Unbounded", cursive;
@@ -12,6 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
 .container {
   background-color: white;
   width: 500px;
@@ -21,14 +24,17 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .container > h1 {
   margin-bottom: 0.5rem;
   color: #645cbb;
 }
+
 main {
   display: flex;
   flex-direction: column;
 }
+
 .user {
   width: 20rem;
   height: 3rem;
@@ -40,6 +46,7 @@ main {
   font-weight: 600;
   border: 1px solid black;
 }
+
 .pass {
   width: 20rem;
   height: 3rem;
@@ -51,18 +58,22 @@ main {
   font-weight: 600;
   border: 1px solid black;
 }
+
 .user::placeholder {
   color: gray;
   font-weight: 400;
 }
+
 .pass::placeholder {
   font-weight: 100;
   color: gray;
 }
+
 .button-container {
   background-color: #645cbb;
   cursor: pointer;
 }
+
 .button-container input {
   border: none;
   width: 20rem;
@@ -73,32 +84,42 @@ main {
   font-weight: 700;
   cursor: pointer;
 }
+
 @media screen and (max-width: 445px) {
-  .container>h1{
+
+  .container > h1 {
     font-size: 25px;
   }
+
   body {
     padding: 0 20px;
   }
+
   .user,
   .pass {
     width: 15rem;
   }
+
   .button-container input {
     width: 15rem;
     height: 3rem;
   }
+
 }
 
 @media screen and (max-width: 330px) {
-  .container>h1{
+
+  .container > h1 {
     font-size: 20px;
   }
+
   .user,
   .pass {
     width: 10rem;
   }
+
   .button-container input {
     width: 10rem;
   }
+  
 }
